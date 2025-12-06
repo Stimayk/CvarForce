@@ -12,7 +12,7 @@ public class CvarForceConfig : BasePluginConfig
 {
     public Dictionary<string, object> Cvars { get; set; } = new()
     {
-        ["sv_cheats"] = false, ["mp_autoteambalance"] = true, ["mp_timelimit"] = 30, ["sv_password"] = "pass123"
+        ["sv_cheats"] = false, ["mp_autoteambalance"] = true, ["mp_timelimit"] = 30, ["hostname"] = "test"
     };
 }
 
@@ -132,4 +132,5 @@ public class CvarForce : BasePlugin, IPluginConfig<CvarForceConfig>
             _ => value.ToString() ?? ""
         };
     }
+
 }
